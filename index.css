@@ -1,0 +1,176 @@
+* {
+   margin: 0;
+   Padding: 0;   
+  }
+body {
+     background:#fafafa;
+     position:relative;
+     }
+.main {
+       display:table;
+       clear:both;
+       }
+.header {
+         margin: 0 1rem;
+         padding: 1rem 2rem;
+         width: 20%;
+         float: left;
+        }
+
+ .header h1 {
+     font-family: "Times New Roman";
+     margin: 2rem auto;
+     }       
+        
+.header ul {
+    list-style:none;
+   } 
+.header li {
+    font-size: 80%;
+    font-weight: 100;
+    margin: 2rem auto;
+    padding: 0.5rem 0;
+    } 
+.header a {
+            color: #ababab;
+            text-decoration: none;
+            }
+.header a:hover {
+    border-bottom: 0.1rem solid #fd5656;
+                   }
+.header a:active  { text-decoration: overline 0.1rem solid #fd5656;}                              
+.header button {
+        position: relative;
+        background: #fd5656;
+        color: white;
+        border: none;
+        font-size: 80%;
+        border-radius: 1.5rem;
+        padding: 0.8rem 2.5rem;
+        margin: 1rem auto;
+        }
+
+ .content {  
+           margin: 1rem 0;
+           padding: 2rem 0;
+           }
+ .about {
+         text-align: left;
+         display: grid;
+         grid-template-columns: 1.5fr 1.3fr 1fr;
+         }          
+ .about h1 {
+             font-family: "Times New Roman";
+             font-size: 3rem;
+             margin: 2rem auto;
+             padding: 1rem 0 0.5rem 0;
+             }  
+ .about p {
+           color: #ababab;
+           width: 60%;
+           margin: 2rem auto;
+           padding: 1rem 0;
+           border-bottom: 0.2rem solid #fd5656;
+           border-bottom-left-radius: 5px;
+           border-bottom-right-radius: 5px;
+           grid-row: 1;
+           grid-column: 2;
+           }
+ .items {
+         grid-row: 2;
+         position: relative;
+         display:grid;
+         grid-column-start: 1;
+         grid-column-end: 3;
+         margin: 2rem auto;
+         padding: 1rem 0 0.5rem 0;
+        }
+ .items ul {
+           position: relative;
+           list-style: none;
+           /* text-align:center; */
+           }
+.items li {
+           position: relative;
+           display:inline-block;
+           text-align: center;
+           margin:1rem;
+           }  
+.box {
+       position: relative;
+       width: 8rem;
+       height: 10rem;
+       border-radius: 1.5rem;
+       padding: 1rem 0.5rem 0 0.5rem;
+       box-shadow:0 0 2rem 1px rgba(0, 0, 0, 0.3);
+       }
+.box img {
+          position:relative;
+           width: 6rem;
+           height:6rem;
+           border-radius:50%;
+           margin: auto;
+           } 
+.box span {
+          display:block;
+          margin:1rem auto;
+          font-size:80%;
+          font-weight: 500;
+          }
+ button:hover {
+              box-shadow:0 0 12px 1px rgba(0, 0, 0, 0.3);
+               }
+button:active {
+               opacity: 0.7;
+               }
+svg {
+     /* visibility: hidden;*/
+      display:none; 
+     fill:#fd5656;
+     } 
+       
+@media only screen and (max-width: 500px)
+{
+ .desktop {
+           display:none;
+          } 
+  .mobile {
+           display:inline-block;
+           }        
+ .main {
+        display:grid;
+       
+        }
+  .header {
+            width:auto;
+            margin:0;
+            display: grid;
+            grid-template-columns: 1fr 10fr 1fr;
+           }
+   .header h1 {
+               margin:auto;
+               }  
+    .content {
+              text-align: center;
+              margin:0;
+              padding:0;
+              }                 
+   .about {
+           grid-template-columns: 1fr;
+           margin: 1rem 2rem; 
+           }
+   .about h1 {padding:0 1rem}        
+   .about p {
+             grid-row: 3;
+             grid-column-start: 1;
+             grid-column-end: 3;
+             width:80%;
+             margin:auto;
+             }  
+    .about ul {
+               text-align:center;
+                }                         
+   svg {
+        display:block;
+       }                         
+}
